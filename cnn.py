@@ -17,7 +17,7 @@ def build_model(input_shape, num_classes):
         tf.keras.layers.Dense(num_classes, activation='softmax')
     ])
 
-    model.compile(optimizer=tf.keras.optimizers.Adam(lr=0.00002),
+    model.compile(optimizer=tf.keras.optimizers.Adam(lr=0.0001),
                   loss='categorical_crossentropy',
                   metrics=['accuracy'])
     return model

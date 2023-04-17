@@ -33,6 +33,6 @@ def preprocess_data(data_dir, output_dir, test_list_path, val_list_path):
                     np.save(output_file_path, mfcc)
 
 
-preprocess_data(r"c:/speech_commands_v0.01/", "./preprocessed_data/",
-                r"c:/speech_commands_v0.01/testing_list.txt",
-                r"c:/speech_commands_v0.01/validation_list.txt")
+preprocess_data(r"G:/speech_commands_v0.01/", "./preprocessed_data/",
+                r"G:/speech_commands_v0.01/testing_list.txt",
+                r"G:/speech_commands_v0.01/validation_list.txt")

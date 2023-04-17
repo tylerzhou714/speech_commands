@@ -4,7 +4,7 @@ from data_load import *
 import pickle
 
 # 加载模型
-model = load_model('model/best_model.h5')
+model = load_model('model/best_model_all.h5')
 
 
 # 在预测时，从文件加载 label_encoder
@@ -37,7 +37,7 @@ def predict_command(model, audio_data):
 
 
 # 示例
-audio_file = 'data/0c2ca723_nohash_0.wav'
+audio_file = 'data/1daa5ada_nohash_0.wav'
 audio_data = preprocess_audio(audio_file)
 command = predict_command(model, audio_data)
 

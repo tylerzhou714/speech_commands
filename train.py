@@ -23,7 +23,7 @@ def train():
 
     # 构建模型
     input_shape = (32, 64, 1)
-    num_classes = 5
+    num_classes = 31
     model = build_model(input_shape, num_classes)
 
     # 调整数据形状以符合模型输入要求
@@ -52,7 +52,7 @@ def train():
     # 在训练函数中，保存 label_encoder 到文件
     with open('model/label_encoder.pkl', 'wb') as f:
         pickle.dump(label_encoder, f)
-    model.save('model/best_model.h5')
+    model.save('model/best_model_all.h5')
 
     # 绘制散点图
     train_loss = history.history['loss']
